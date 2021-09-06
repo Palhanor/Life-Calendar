@@ -1,0 +1,34 @@
+<!-- https://www.ekn.io/calendar/ -->
+<!-- https://waitbutwhy.com/2014/05/life-weeks.html -->
+<!-- https://count.life/ -->
+<!-- https://labs.coruscantconsulting.co.uk/life/weeks/ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Life calendar</title>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="birthday">Birthday </label><input type="date" id="birthday" placeholder="dd-mm-yyyy"><br><br>
+        <label for="finalAge">Estimated age </label><input type="number" id="finalAge" placeholder="80"><br><br>
+        <label for="typeOfCalendar">Type of calendar <select name="typeOfCalendar" id="typeOfCalendar">
+            <option value="week">Week</option>
+            <option value="month">Month</option>
+        </select><br><br>
+        <button type="button" id="createCalendar">Create calendar!</button>
+    </div>
+
+    <div id="containerMonth"></div>
+    <div id="containerWeek"></div>
+
+    <script src="JS/calendar.js"></script>
+
+</body>
+</html>

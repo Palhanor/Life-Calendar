@@ -1,0 +1,29 @@
+#containerMonth, #containerWeek {
+    display: block;
+    position: absolute;
+    top: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 30px auto;
+}
+#containerMonth {
+    width: 270px;
+}
+#containerWeek {
+    width: 1150px;
+}
+
+.month, .week {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 3px 5px;
+}
+.monthLived, .weekLived {
+    background-color: darkgray;
+}
+
+.weAreHere {
+    background-color: red;
+}
