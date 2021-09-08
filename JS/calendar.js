@@ -29,16 +29,32 @@ var containerWeek = document.querySelector("#containerWeek");
 function generateCalendar() {
     controls.style.display = "none";
     if (typeOfCalendar.value == "month") {
+        var divsCounter = 1;
         for (let i = 0; i < getUserLifeExpectancy(); i++) {
             var newDiv = document.createElement("div");
             containerMonth.appendChild(newDiv);
             newDiv.classList.add("month");
+            if (divsCounter < 12) {
+                divsCounter++;
+            } else {
+                var newBreak = document.createElement("br");
+                containerMonth.appendChild(newBreak);
+                divsCounter = 1;
+            }
         }
     } else if (typeOfCalendar.value == "week") {
+        var divsCounter = 1;
         for (let i = 0; i < getUserLifeExpectancy(); i++) {
             var newDiv = document.createElement("div");
             containerWeek.appendChild(newDiv);
             newDiv.classList.add("week");
+            if (divsCounter < 52) {
+                divsCounter++;
+            } else {
+                var newBreak = document.createElement("br");
+                containerWeek.appendChild(newBreak);
+                divsCounter = 1;
+            }
         }
     }
     paintDivs();

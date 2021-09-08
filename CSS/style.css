@@ -6,11 +6,8 @@
     transform: translateX(-50%);
     margin: 30px auto;
 }
-#containerMonth {
-    width: 270px;
-}
-#containerWeek {
-    width: 1150px;
+#containerMonth, #containerWeek {
+    min-width: 1200px;
 }
 
 .month, .week {
